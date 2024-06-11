@@ -16,7 +16,7 @@ export class Usuario {
     @Column({select: false, nullable: false, length: 200})
     contrasenna: string;
 
-    @Column({type: 'enum', default: ROL.SOCIO, enum: ROL})
+    @Column({type: 'enum', default: ROL.EMPLEADO, enum: ROL})
     rol: string;
     
     @Column({nullable: true, length: 255})

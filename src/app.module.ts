@@ -3,6 +3,11 @@ import { ConfigModule } from '@nestjs/config';
 import { UsuarioModule } from './usuario/usuario.module';
 import { AuthModule } from './auth/auth.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { ZonaModule } from './zona/zona.module';
+import { ManejoExcepcionesModule } from './common/manejo-excepciones/manejo-excepciones.module';
+import { EspecieModule } from './especie/especie.module';
+import { AnimalModule } from './animal/animal.module';
+import { ComentariosModule } from './comentarios/comentarios.module';
 
 @Module({
   imports: [
@@ -21,7 +26,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       synchronize: true,
     }),
     UsuarioModule,
-    AuthModule
+    AuthModule,
+    ZonaModule,
+    ManejoExcepcionesModule,
+    EspecieModule,
+    AnimalModule,
+    ComentariosModule
   ],
   controllers: [],
   providers: [],
