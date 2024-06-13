@@ -1,7 +1,6 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body } from '@nestjs/common';
 import { ComentariosService } from './comentarios.service';
 import { CreateComentarioDto } from './dto/create-comentario.dto';
-import { UpdateComentarioDto } from './dto/update-comentario.dto';
 import { Auth } from 'src/auth/decorators/auth.decorator';
 import { ROL } from 'src/common/enums/rol.enum';
 import { AnimalPipe } from 'src/animal/pipes/animal.pipe';
